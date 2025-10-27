@@ -8,9 +8,9 @@ namespace WeatherApp.Core.Implementations;
 
 public class WeatherService : IWeatherService
 {
-    private readonly WeatherDataProvider _weatherDataProvider;
+    private readonly IWeatherDataProvider _weatherDataProvider;
 
-    public WeatherService(WeatherDataProvider weatherDataProvider)
+    public WeatherService(IWeatherDataProvider weatherDataProvider)
     {
         _weatherDataProvider = weatherDataProvider;
     }

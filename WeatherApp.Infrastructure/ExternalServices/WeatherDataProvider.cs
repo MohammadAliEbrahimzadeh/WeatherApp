@@ -3,7 +3,7 @@ using RestSharp;
 using System.Text.Json;
 using WeatherApp.DataModels;
 
-public class WeatherDataProvider
+public class WeatherDataProvider : IWeatherDataProvider
 {
     private readonly RestClient _client;
     private readonly string _apiKey;

@@ -79,7 +79,7 @@ internal static class DependencyInjection
     }
 
     internal static IServiceCollection InjectExternalServices(this IServiceCollection services) =>
-        services.AddScoped<WeatherDataProvider>();
+        services.AddScoped<IWeatherDataProvider, WeatherDataProvider>();
 
 
     internal static IServiceCollection InjectFluentValidation(this IServiceCollection services) =>
